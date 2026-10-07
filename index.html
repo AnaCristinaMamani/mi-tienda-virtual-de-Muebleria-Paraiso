@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+<title>Mueblería Paraíso | Tienda Online</title>
+
+
+<!-- Uso Poppins para mantener el estilo visual de la tienda. -->
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet">
+
+<link
+  rel="stylesheet"
+  href="styles.css?v=202">
+
+
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     ENCABEZADO
+     ========================================================= -->
+
+<header>
+
+  <img
+    src="./img/LogoParaiso.jpg"
+    alt="Logo Mueblería Paraíso"
+    class="logo">
+
+
+  <!-- Este correo y teléfono son los datos de contacto
+       que uso para Mueblería Paraíso. -->
+
+  <p>
+
+    La Joya, Arequipa, Perú |
+
+    📧 ana19pilco@gmail.com |
+
+    📞 931451286
+
+  </p>
+
+</header>
+
+
+
+<!-- =========================================================
+     MENÚ PRINCIPAL DE MUEBLERÍA PARAÍSO
+
+     CATÁLOGO contiene las categorías.
+
+     PRECIOS INT. contiene las monedas.
+
+     El carrito queda fuera del menú como botón independiente.
+     ========================================================= -->
+
+<nav>
+
+
+  <!-- =======================================================
+       INICIO
+       ======================================================= -->
+
+  <a href="#inicio">
+
+    INICIO
+
+  </a>
+
+
+
+  <!-- =======================================================
+       CATÁLOGO
+
+       Aquí se encuentran las 6 categorías del catálogo.
+       ======================================================= -->
+
+  <div class="nav-catalogo">
+
+
+    <button
+      class="catalogo-btn"
+      type="button"
+      onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'});">
+
+      CATÁLOGO ▾
+
+    </button>
+
+
+    <div class="catalogo-menu">
+
+
+      <a href="#camas">
+
+        CAMAS Y TARIMAS
+
+      </a>
+
+
+      <a href="#roperos">
+
+        ROPEROS
+
+      </a>
+
+
+      <a href="#comodas-tocadores">
+
+        CÓMODAS Y TOCADORES
+
+      </a>
+
+
+      <a href="#reposteros-estantes">
+
+        REPOSTEROS, ESTANTES Y AUXILIARES
+
+      </a>
+
+
+      <a href="#colchones-ropa">
+
+        COLCHONES Y ROPA DE CAMA
+
+      </a>
+
+
+      <a href="#sillas-mesas-cocina">
+
+        SILLAS, MESAS Y COCINA
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       PRECIOS INTERNACIONALES
+
+       Las monedas están dentro de este menú.
+       ======================================================= -->
+
+  <div class="nav-catalogo">
+
+
+    <button
+      class="catalogo-btn"
+      type="button"
+      onclick="document.getElementById('precios-internacionales').scrollIntoView({behavior:'smooth'});">
+
+      PRECIOS INT. ▾
+
+    </button>
+
+
+    <div class="catalogo-menu">
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('PEN', 'selección desde PRECIOS INT.')">
+
+        🇵🇪 PEN - Sol peruano
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('USD', 'selección desde PRECIOS INT.')">
+
+        🇺🇸 USD - Dólar
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('EUR', 'selección desde PRECIOS INT.')">
+
+        🇪🇺 EUR - Euro
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('CNY', 'selección desde PRECIOS INT.')">
+
+        🇨🇳 CNY - Yuan chino
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('JPY', 'selección desde PRECIOS INT.')">
+
+        🇯🇵 JPY - Yen japonés
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('KRW', 'selección desde PRECIOS INT.')">
+
+        🇰🇷 KRW - Won surcoreano
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('RUB', 'selección desde PRECIOS INT.')">
+
+        🇷🇺 RUB - Rublo ruso
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('CLP', 'selección desde PRECIOS INT.')">
+
+        🇨🇱 CLP - Peso chileno
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('COP', 'selección desde PRECIOS INT.')">
+
+        🇨🇴 COP - Peso colombiano
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('MXN', 'selección desde PRECIOS INT.')">
+
+        🇲🇽 MXN - Peso mexicano
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('GBP', 'selección desde PRECIOS INT.')">
+
+        🇬🇧 GBP - Libra esterlina
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('BRL', 'selección desde PRECIOS INT.')">
+
+        🇧🇷 BRL - Real brasileño
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('ARS', 'selección desde PRECIOS INT.')">
+
+        🇦🇷 ARS - Peso argentino
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('BOB', 'selección desde PRECIOS INT.')">
+
+        🇧🇴 BOB - Boliviano
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('CAD', 'selección desde PRECIOS INT.')">
+
+        🇨🇦 CAD - Dólar canadiense
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('AUD', 'selección desde PRECIOS INT.')">
+
+        🇦🇺 AUD - Dólar australiano
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('CHF', 'selección desde PRECIOS INT.')">
+
+        🇨🇭 CHF - Franco suizo
+
+      </a>
+
+
+      <a
+        href="#precios-internacionales"
+        onclick="cambiarMoneda('INR', 'selección desde PRECIOS INT.')">
+
+        🇮🇳 INR - Rupia india
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       BUSCADOR
+
+       Lleva al buscador que ya existe.
+       ======================================================= -->
+
+  <a
+    href="#buscador"
+    class="menu-buscador">
+
+    🔍 BUSCADOR
+
+  </a>
+
+
+
+  <!-- =======================================================
+       INGRESAR
+
+       Por ahora es solamente una opción visual.
+       ======================================================= -->
+
+  <a
+    href="#"
+    class="menu-especial">
+
+    INGRESAR
+
+  </a>
+
+
+
+  <!-- =======================================================
+       REGISTRARSE
+
+       Por ahora es solamente una opción visual.
+       ======================================================= -->
+
+  <a
+    href="#"
+    class="menu-especial">
+
+    REGISTRARSE
+
+  </a>
+
+
+</nav>
+
+
+
+<!-- =========================================================
+     CARRITO ORIGINAL
+
+     Este botón queda fuera del menú principal.
+
+     Se muestra arriba a la derecha con el ícono,
+     la palabra Carrito y un círculo rojo.
+
+     El número cambia automáticamente cuando agrego
+     productos al carrito.
+     ========================================================= -->
+
+<button
+  class="cart-top"
+  onclick="abrirCarrito()"
+  aria-label="Abrir carrito">
+
+  🛒 Carrito
+
+  <span id="cart-count">
+    0
+  </span>
+
+</button>
+
+
+
+<!-- =========================================================
+     BOTÓN FLOTANTE PARA REGRESAR AL INICIO
+     ========================================================= -->
+
+<button
+  class="btn-inicio-flotante"
+  id="btnInicio"
+  onclick="irAlInicio()"
+  aria-label="Ir al inicio">
+</button>
+
+
+
+<!-- =========================================================
+     BOTÓN DE EMERGENCIA / SOPORTE
+     ========================================================= -->
+
+<button
+  class="emergency-btn"
+  onclick="abrirEmergencia()">
+
+  🆘
+
+</button>
+
+
+
+<!-- =========================================================
+     INICIO / CARRUSEL
+     ========================================================= -->
+
+<section id="inicio">
+
+
+  <div class="carousel">
+
+
+    <div class="carousel-inner">
+
+
+      <div class="carousel-item">
+
+        <img
+          src="./img/salamoderna1.jpeg"
+          alt="Sala moderna">
+
+
+        <div class="carousel-overlay">
+
+          <h2>
+            Bienvenidos a Mueblería Paraíso
+          </h2>
+
+
+          <p>
+
+            Muebles y artículos para el
+            <strong>hogar</strong>
+            en La Joya, Arequipa.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="carousel-item">
+
+        <img
+          src="./img/sofas2.webp"
+          alt="Sofás modernos">
+
+
+        <div class="carousel-overlay">
+
+          <h2>
+            Comodidad para tu Hogar
+          </h2>
+
+
+          <p>
+
+            Camas, colchones, roperos, mesas,
+            sillas y mucho más.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="carousel-item">
+
+        <img
+          src="./img/dormitorio3.webp"
+          alt="Dormitorio moderno">
+
+
+        <div class="carousel-overlay">
+
+          <h2>
+            Renueva tu Dormitorio
+          </h2>
+
+
+          <p>
+
+            Camas, colchones, roperos y tocadores.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="carousel-item">
+
+        <img
+          src="./img/comedor4.jpg"
+          alt="Comedor moderno">
+
+
+        <div class="carousel-overlay">
+
+          <h2>
+            Comedor y Cocina
+          </h2>
+
+
+          <p>
+
+            Mesas, sillas, cocinas y reposteros
+            para tu familia.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="carousel-item">
+
+        <img
+          src="./img/ofis.webp"
+          alt="Mueblería Paraíso">
+
+
+        <div class="carousel-overlay">
+
+          <h2>
+            Consulta por WhatsApp
+          </h2>
+
+
+          <p>
+
+            Escríbenos y te ayudamos a encontrar
+            lo que necesitas.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="carousel-item">
+
+        <img
+          src="./img/mueble.jpg"
+          alt="Muebles de calidad">
+
+
+        <div class="carousel-overlay">
+
+          <h2>
+            Atención Cercana
+          </h2>
+
+
+          <p>
+
+            Visítanos en la Panamericana Sur –
+            El Cruce – La Joya.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="carousel-controls">
+
+
+      <button
+        class="carousel-btn"
+        onclick="previousSlide()">
+
+        ‹
+
+      </button>
+
+
+      <button
+        class="carousel-btn"
+        onclick="nextSlide()">
+
+        ›
+
+      </button>
+
+
+    </div>
+
+
+
+    <div class="carousel-indicators">
+
+
+      <span
+        class="indicator active"
+        onclick="goToSlide(0)">
+      </span>
+
+
+      <span
+        class="indicator"
+        onclick="goToSlide(1)">
+      </span>
+
+
+      <span
+        class="indicator"
+        onclick="goToSlide(2)">
+      </span>
+
+
+      <span
+        class="indicator"
+        onclick="goToSlide(3)">
+      </span>
+
+
+      <span
+        class="indicator"
+        onclick="goToSlide(4)">
+      </span>
+
+
+      <span
+        class="indicator"
+        onclick="goToSlide(5)">
+      </span>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRODUCTOS / CATÁLOGO
+
+     Aquí se muestran los productos que vienen desde data.js.
+
+     Los productos se separan en las categorías de
+     Mueblería Paraíso.
+     ========================================================= -->
+
+<main
+  class="productos"
+  id="catalogo">
+
+
+
+  <!-- =======================================================
+       BUSCADOR EXISTENTE
+       ======================================================= -->
+
+  <div class="buscador-box">
+
+
+    <input
+      id="buscador"
+      type="search"
+      placeholder="🔍 Buscar productos: cama, colchón, ropero, mesa, silla, tocador..."
+      aria-label="Buscar productos"
+      autocomplete="off">
+
+
+    <p
+      id="busqueda-estado"
+      class="pd-estado">
+    </p>
+
+
+  </div>
+
+
+
+  <!-- =======================================================
+       CAMAS Y TARIMAS
+       ======================================================= -->
+
+  <section id="camas">
+
+
+    <h2>
+      CAMAS Y TARIMAS
+    </h2>
+
+
+    <div
+      class="grid"
+      id="grid-camas">
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =======================================================
+       ROPEROS
+       ======================================================= -->
+
+  <section id="roperos">
+
+
+    <h2>
+      ROPEROS
+    </h2>
+
+
+    <div
+      class="grid"
+      id="grid-roperos">
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =======================================================
+       CÓMODAS Y TOCADORES
+       ======================================================= -->
+
+  <section id="comodas-tocadores">
+
+
+    <h2>
+      CÓMODAS Y TOCADORES
+    </h2>
+
+
+    <div
+      class="grid"
+      id="grid-comodas-tocadores">
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =======================================================
+       REPOSTEROS, ESTANTES Y AUXILIARES
+       ======================================================= -->
+
+  <section id="reposteros-estantes">
+
+
+    <h2>
+      REPOSTEROS, ESTANTES Y AUXILIARES
+    </h2>
+
+
+    <div
+      class="grid"
+      id="grid-reposteros-estantes">
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =======================================================
+       COLCHONES Y ROPA DE CAMA
+       ======================================================= -->
+
+  <section id="colchones-ropa">
+
+
+    <h2>
+      COLCHONES Y ROPA DE CAMA
+    </h2>
+
+
+    <div
+      class="grid"
+      id="grid-colchones-ropa">
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =======================================================
+       SILLAS, MESAS Y COCINA
+       ======================================================= -->
+
+  <section id="sillas-mesas-cocina">
+
+
+    <h2>
+      SILLAS, MESAS Y COCINA
+    </h2>
+
+
+    <div
+      class="grid"
+      id="grid-sillas-mesas-cocina">
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =======================================================
+       PRECIOS INTERNACIONALES
+
+       Esta sección permite cambiar los precios
+       desde soles peruanos a otras monedas.
+       ======================================================= -->
+
+  <section
+    id="precios-internacionales"
+    class="puente-digital-section">
+
+
+    <h2>
+      Compra desde cualquier país
+    </h2>
+
+
+    <p class="pd-subtitle">
+
+      La tienda identifica el país de conexión
+      y propone una moneda.
+
+      Luego consulta una API de tipo de cambio
+      para convertir los precios desde PEN.
+
+    </p>
+
+
+    <p
+      id="pais-estado"
+      class="pd-estado">
+
+      Detectando país...
+
+    </p>
+
+
+
+    <!-- Esta lista me sirve para probar la conversión
+         seleccionando manualmente otro país. -->
+
+    <div class="currency-test">
+
+
+      <label for="pais-prueba">
+
+        <strong>
+          Probar otro país:
+        </strong>
+
+      </label>
+
+
+      <select id="pais-prueba">
+
+
+        <option value="">
+
+          -- Selecciona para hacer una prueba --
+
+        </option>
+
+
+        <option value="US">
+
+          🇺🇸 Estados Unidos → USD
+
+        </option>
+
+
+        <option value="ES">
+
+          🇪🇸 España → EUR
+
+        </option>
+
+
+        <option value="CN">
+
+          🇨🇳 China → CNY
+
+        </option>
+
+
+        <option value="JP">
+
+          🇯🇵 Japón → JPY
+
+        </option>
+
+
+        <option value="KR">
+
+          🇰🇷 Corea del Sur → KRW
+
+        </option>
+
+
+        <option value="CL">
+
+          🇨🇱 Chile → CLP
+
+        </option>
+
+
+        <option value="MX">
+
+          🇲🇽 México → MXN
+
+        </option>
+
+
+        <option value="GB">
+
+          🇬🇧 Reino Unido → GBP
+
+        </option>
+
+
+      </select>
+
+
+    </div>
+
+
+
+    <!-- Este selector también permite cambiar
+         directamente la moneda de los precios. -->
+
+    <div class="currency-row">
+
+
+      <label for="moneda-select">
+
+        Moneda:
+
+      </label>
+
+
+      <select id="moneda-select">
+
+
+        <option value="PEN">
+          PEN - Sol peruano
+        </option>
+
+
+        <option value="USD">
+          USD - Dólar
+        </option>
+
+
+        <option value="EUR">
+          EUR - Euro
+        </option>
+
+
+        <option value="CNY">
+          CNY - Yuan chino
+        </option>
+
+
+        <option value="JPY">
+          JPY - Yen japonés
+        </option>
+
+
+        <option value="KRW">
+          KRW - Won surcoreano
+        </option>
+
+
+        <option value="RUB">
+          RUB - Rublo ruso
+        </option>
+
+
+        <option value="CLP">
+          CLP - Peso chileno
+        </option>
+
+
+        <option value="COP">
+          COP - Peso colombiano
+        </option>
+
+
+        <option value="MXN">
+          MXN - Peso mexicano
+        </option>
+
+
+        <option value="GBP">
+          GBP - Libra esterlina
+        </option>
+
+
+        <option value="BRL">
+          BRL - Real brasileño
+        </option>
+
+
+        <option value="ARS">
+          ARS - Peso argentino
+        </option>
+
+
+        <option value="BOB">
+          BOB - Boliviano
+        </option>
+
+
+        <option value="CAD">
+          CAD - Dólar canadiense
+        </option>
+
+
+        <option value="AUD">
+          AUD - Dólar australiano
+        </option>
+
+
+        <option value="CHF">
+          CHF - Franco suizo
+        </option>
+
+
+        <option value="INR">
+          INR - Rupia india
+        </option>
+
+
+      </select>
+
+
+    </div>
+
+
+    <p
+      id="moneda-estado"
+      class="pd-estado">
+    </p>
+
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     PIE DE PÁGINA
+     ========================================================= -->
+
+<footer>
+
+
+  <p>
+
+    © 2026 Mueblería Paraíso - Tienda Online
+
+  </p>
+
+
+  <p>
+
+    Catálogo, carrito, pedidos, pagos y conversión
+    de moneda mediante API.
+
+  </p>
+
+
+</footer>
+
+
+
+<!-- =========================================================
+     CARRITO DESPLEGABLE
+
+     Este es el carrito que aparece desde el botón
+     "🛒 Carrito" de la parte superior.
+
+     Aquí se muestran los productos que voy agregando,
+     sus imágenes, cantidades, precios y subtotal.
+
+     Los productos no se escriben manualmente aquí.
+     script.js los coloca automáticamente.
+     ========================================================= -->
+
+<div
+  id="cart-panel"
+  class="side-panel">
+
+
+  <!-- =======================================================
+       CABECERA DEL CARRITO
+
+       El nombre "Mi carrito" identifica claramente
+       el panel que se abrió.
+       ======================================================= -->
+
+  <div class="panel-head">
+
+
+    <h2>
+      🛒 Mi carrito
+    </h2>
+
+
+    <button
+      onclick="cerrarCarrito()"
+      aria-label="Cerrar carrito">
+
+      ×
+
+    </button>
+
+
+  </div>
+
+
+
+  <!-- =======================================================
+       PRODUCTOS DEL CARRITO
+
+       Aquí JavaScript coloca cada producto que agrego.
+
+       También aparecen aquí los botones para aumentar,
+       disminuir o eliminar productos.
+       ======================================================= -->
+
+  <div id="cart-items"></div>
+
+
+
+  <!-- =======================================================
+       TOTAL DEL CARRITO
+
+       El subtotal se calcula automáticamente según
+       los productos y las cantidades seleccionadas.
+       ======================================================= -->
+
+  <div class="cart-summary">
+
+
+    <p>
+
+      Subtotal:
+
+      <strong id="cart-subtotal">
+        S/ 0.00
+      </strong>
+
+    </p>
+
+
+    <!-- Este botón lleva al siguiente paso de la compra. -->
+
+    <button
+      class="checkout-btn"
+      onclick="abrirCheckout()">
+
+      Continuar compra
+
+    </button>
+
+
+  </div>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     FONDO DEL CARRITO
+
+     Cuando se abre el carrito aparece este fondo oscuro.
+
+     Al hacer clic fuera del carrito también puedo cerrarlo.
+     ========================================================= -->
+
+<div
+  id="cart-overlay"
+  class="overlay"
+  onclick="cerrarCarrito()">
+</div>
+
+
+
+<!-- =========================================================
+     CHECKOUT
+
+     Aquí se colocan los datos necesarios para continuar
+     con el pedido y seleccionar el método de pago.
+     ========================================================= -->
+
+<div
+  id="checkout-modal"
+  class="modal">
+
+
+  <div
+    class="modal-box checkout-box">
+
+
+    <button
+      class="modal-close"
+      onclick="cerrarCheckout()">
+
+      ×
+
+    </button>
+
+
+    <h2>
+      Finalizar compra
+    </h2>
+
+
+    <div id="checkout-resumen"></div>
+
+
+    <form id="checkout-form">
+
+
+      <input
+        name="cliente"
+        placeholder="Nombre completo"
+        required>
+
+
+      <input
+        name="email"
+        type="email"
+        placeholder="Correo electrónico"
+        required>
+
+
+      <input
+        name="telefono"
+        placeholder="Teléfono"
+        required>
+
+
+      <textarea
+        name="direccion"
+        placeholder="Dirección de entrega"
+        required>
+      </textarea>
+
+
+      <select
+        name="pago"
+        id="pago"
+        required>
+
+
+        <option value="">
+
+          Selecciona método de pago
+
+        </option>
+
+
+        <option value="yape">
+
+          Yape / QR (demostración)
+
+        </option>
+
+
+        <option value="tarjeta">
+
+          Tarjeta (demostración)
+
+        </option>
+
+
+        <option value="contra_entrega">
+
+          Contra entrega
+
+        </option>
+
+
+      </select>
+
+
+      <div id="payment-extra"></div>
+
+
+      <button
+        class="checkout-btn"
+        type="submit">
+
+        Confirmar pedido
+
+      </button>
+
+
+    </form>
+
+
+    <p
+      id="checkout-msg"
+      class="pd-estado">
+    </p>
+
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     EMERGENCIA / CONTACTO
+
+     Este botón permite mostrar los datos de contacto
+     cuando el cliente necesita ayuda.
+     ========================================================= -->
+
+<div
+  id="emergency-modal"
+  class="modal">
+
+
+  <div class="modal-box">
+
+
+    <button
+      class="modal-close"
+      onclick="cerrarEmergencia()">
+
+      ×
+
+    </button>
+
+
+    <h2>
+      🆘 Atención y soporte
+    </h2>
+
+
+    <p>
+
+      ¿Tuviste un problema con tu pedido, pago o carrito?
+
+    </p>
+
+
+    <p>
+
+      <strong>
+        WhatsApp:
+      </strong>
+
+      931 451 286
+
+    </p>
+
+
+    <p>
+
+      <strong>
+        Correo:
+      </strong>
+
+      ana19pilco@gmail.com
+
+    </p>
+
+
+    <a
+      class="checkout-btn"
+      href="https://wa.me/51931451286?text=Hola%20Muebler%C3%ADa%20Para%C3%ADso%2C%20necesito%20ayuda%20con%20mi%20compra."
+      target="_blank">
+
+      Contactar por WhatsApp
+
+    </a>
+
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     ARCHIVOS JAVASCRIPT
+
+     Primero cargo los datos de los productos.
+
+     Después cargo las funciones principales de la tienda,
+     incluyendo el carrito.
+
+     Finalmente cargo las funciones relacionadas
+     con la conversión de moneda.
+     ========================================================= -->
+
+<script src="data.js"></script>
+
+<script src="script.js"></script>
+
+<script src="digital.js"></script>
+
+
+</body>
+</html>
